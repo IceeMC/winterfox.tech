@@ -32,6 +32,7 @@ export default function FoxApp({ Component, pageProps }: AppProps) {
       <meta httpEquiv='X-UA-Comatible' content='IE=edge' />
       <meta name='viewport' content='width=device-width, initial-scale=1' />
     </Head>
+
     <Component {...pageProps} />
   </>;
 }

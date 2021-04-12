@@ -20,7 +20,14 @@
  * SOFTWARE.
  */
 
-/** */
+import Container from '../components/Container';
+import Footer from '../components/Footer';
+
 export default function FoxHuh() {
-  return <></>;
+  return <>
+    <Container image='huh'>
+      <p className='text-white'>You seem lost since this isn't found?</p>
+    </Container>
+    <Footer />
+  </>;
 }

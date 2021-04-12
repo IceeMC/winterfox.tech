@@ -20,13 +20,14 @@
  * SOFTWARE.
  */
 
-//import Container from '../components/Container';
+import Container from '../components/Container';
 import Footer from '../components/Footer';
-import Image from 'next/image';
 
 export default function Index() {
   return <>
-    hi world!
+    <Container image='huh'>
+      <p className='text-white'>hi world</p>
+    </Container>
     <Footer />
   </>;
 }

@@ -25,7 +25,7 @@ export default function Footer() {
   const current = new Date();
   const year = current.getFullYear() === 2021 ? '2021' : `2021-${current.getFullYear()}`;
 
-  return <div className='footer container fixed italic text-white w-full mx-2 my-3 text-xl font-sans'>
-    Site created by <a href='https://floofy.dev' target='_blank'>Noel 🌺</a> (copyright {year}) | Art created by their respected creators.
+  return <div className='footer fixed italic text-white w-full mx-2 my-3 text-xl font-sans'>
+    Site created by <a href='https://floofy.dev' className='cursor-pointer' target='_blank'>Noel 🌺</a> (copyright {year}) | Art created by their respected creators.
   </div>;
 }
