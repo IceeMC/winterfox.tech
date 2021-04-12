@@ -26,7 +26,10 @@ import Footer from '../components/Footer';
 export default function FoxHuh() {
   return <>
     <Container image='huh'>
-      <p className='text-white'>You seem lost since this isn't found?</p>
+      <p className='text-white text-4xl text-hind'>Hey, you seem lost. Did you get redirected to a wrong URL?</p>
+      <a href='https://winterfox.tech' className='cursor-pointer text-white text-2xl text-indie'>
+        Back to Homepage
+      </a>
     </Container>
     <Footer />
   </>;

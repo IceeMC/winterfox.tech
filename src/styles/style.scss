@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind&family=Indie+Flower&display=swap');
 @tailwind components;
 @tailwind utilities;
 @tailwind base;
@@ -19,4 +20,17 @@ html, body {
 .footer {
   bottom: 0;
   left: 0;
+}
+
+// this is here to make fixed footers actually work with hyperlinks lol
+.fixed-height {
+  height: 91vh;
+}
+
+.text-hind {
+  font-family: 'Hind', sans-serif;
+}
+
+.text-indie {
+  font-family: 'Indie Flower', cursive;
 }

@@ -27,14 +27,14 @@ export default function Container({ children, image }: {
   image: 'huh' | 'sit';
 }) {
   // credit for container: https://github.com/dondish/personal-site/blob/master/src/components/MainHero.vue
-  return <div className='flex flex-col relative lg:p-16 z-50 justify-center'>
+  return <div className='flex flex-col relative lg:p-16 z-50 justify-center fixed-height'>
     <div className='lg:text-center lg:container lg:grid lg:grid-cols-4 lg:rounded lg:pt-8 lg:h-auto lg:mx-auto text-center w-full block pt-12 p-8 gap-3'>
-      <div className='flex justify-center mx-auto'>
+      <div className='flex justify-center mx-auto mb-5'>
         <Image
           src={`/${image}.png`}
           alt={image === 'huh' ? 'Winter Huh?' : 'Winter Sit!'}
-          width={image === 'sit' ? 'auto' : 242}
-          height={image === 'sit' ? 'auto' : 242}
+          width={image === 'sit' ? 'auto' : 350}
+          height={image === 'sit' ? 'auto' : 350}
           draggable='false'
         />
       </div>

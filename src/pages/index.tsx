@@ -26,7 +26,13 @@ import Footer from '../components/Footer';
 export default function Index() {
   return <>
     <Container image='huh'>
-      <p className='text-white'>hi world</p>
+      <p className='text-white text-7xl text-indie'>Winter / Ice</p>
+      <p className='text-white text-4xl text-hind italic'>*bork bork*</p>
+      <br />
+      <br />
+      <p className='text-white text-3xl text-hind'>
+        A furry who likes to program in Go, Java, TypeScript, JavaScript, with some Python.
+      </p>
     </Container>
     <Footer />
   </>;
