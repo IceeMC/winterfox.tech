@@ -1,0 +1,7 @@
+node_modules
+.next
+
+.eslintignore
+LICENSE
+README.md
+renovate.json

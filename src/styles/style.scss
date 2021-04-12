@@ -1,0 +1,22 @@
+@tailwind components;
+@tailwind utilities;
+@tailwind base;
+
+::-moz-selection {
+  background: #47A4A4;
+  color: #EEEEEE;
+}
+
+::selection {
+  background: #47A4A4;
+  color: #EEEEEE;
+}
+
+html, body {
+  background-color: #3F3F3F;
+}
+
+.footer {
+  bottom: 0;
+  left: 0;
+}
