@@ -20,20 +20,41 @@
  * SOFTWARE.
  */
 
-import Container from '../components/Container';
-import Footer from '../components/Footer';
+import Image from 'next/image';
+import Twemoji from '../components/Twemoji';
 
-export default function Index() {
+export default function Homepage() {
+  const current = new Date();
+  const year = current.getFullYear() === 2021 ? '2021' : `2021-${current.getFullYear()}`;
+
   return <>
-    <Container image='huh'>
-      <p className='text-white text-7xl text-indie'>Winter / Ice</p>
-      <p className='text-white text-4xl text-hind italic'>*bork bork*</p>
-      <br />
-      <br />
-      <p className='text-white text-3xl text-hind'>
-        A furry who likes to program in Go, Java, TypeScript, JavaScript, with some Python.
+    <div className='container'>
+      <div className='container-content'>
+        <div className='container-left'>
+          <Image
+            src='/icon.png'
+            className='avatar'
+            alt='winter'
+            width={234}
+            height={234}
+            draggable='false'
+          />
+        </div>
+        <div className='container-right'>
+          <h1 className='heading-1'>
+            Winter
+          </h1>
+          <h2 className='heading-2'>
+            A furry who likes to program in Go, Java, TypeScript, JavaScript, with some Python.
+          </h2>
+        </div>
+      </div>
+    </div>
+
+    <footer className='footer'>
+      <p>
+        bork bork! | &copy; {year} <a href='https://floofy.dev' rel='noopener' style={{ color: 'white' }}>Noel</a> <Twemoji emoji='🥀' /> (art is not owned by me.)
       </p>
-    </Container>
-    <Footer />
+    </footer>
   </>;
 }
