@@ -36,12 +36,11 @@ export default class FoxDocument extends Document {
         <meta name='og:image' content='https://winterfox.tech/icon.png' />
         <meta name='og:type' content='website' />
         <meta name='og:url' content='https://winterfox.tech' />
-
-        <script src='https://twemoji.maxcdn.com/v/latest/twemoji.min.js' crossOrigin='anonymous'></script>
       </Head>
       <body>
         <Main />
         <NextScript />
+        <script src='https://twemoji.maxcdn.com/v/latest/twemoji.min.js' crossOrigin='anonymous'></script>
       </body>
     </Html>;
   }
