@@ -1,7 +1,7 @@
 {
   "name": "winterfox.tech",
   "description": "狐 (\"fox\") is the source code for winterfox.tech, made with React and Next.js",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
   "license": "MIT",
   "author": "August <cutie@floofy.dev>",
