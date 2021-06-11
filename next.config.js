@@ -4,5 +4,8 @@ module.exports = {
   trailingSlash: true,
   future: {
     webpack5: true
+  },
+  images: {
+    domains: ['cdn.floofy.dev']
   }
 };

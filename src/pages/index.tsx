@@ -20,8 +20,49 @@
  * SOFTWARE.
  */
 
-import Image from 'next/image';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import * as brands from '@fortawesome/free-brands-svg-icons';
+import * as core from '@fortawesome/fontawesome-svg-core';
 import Twemoji from '../components/Twemoji';
+import Image from 'next/image';
+
+core
+  .library
+  .add(
+    brands.faDiscord,
+    brands.faGithub,
+    brands.faTelegram,
+    brands.faTwitter,
+    brands.faSteam,
+    brands.faTwitch
+  );
+
+const socials = {
+  github: {
+    icon: ['fab', 'github'],
+    link: 'https://github.com/IceeMC'
+  },
+  discord: {
+    icon: ['fab', 'discord'],
+    link: 'https://discord.gg/JjHGR6vhcG'
+  },
+  twitter: {
+    icon: ['fab', 'twitter'],
+    link: 'https://twitter.com/a_ice_cube'
+  },
+  telegram: {
+    icon: ['fab', 'telegram'],
+    link: 'https://t.me/WinterFoxxo'
+  },
+  twitch: {
+    icon: ['fab', 'twitch'],
+    link: 'https://twitch.tv/IceeMC'
+  },
+  steam: {
+    icon: ['fab', 'steam'],
+    link: 'https://steamcommunity.com/id/IceeMC'
+  }
+};
 
 export default function Homepage() {
   const current = new Date();
@@ -32,7 +73,7 @@ export default function Homepage() {
       <div className='container-content'>
         <div className='container-left'>
           <Image
-            src='/icon.png'
+            src='https://cdn.floofy.dev/images/Ice.png'
             className='avatar'
             alt='winter'
             width={234}
@@ -47,6 +88,14 @@ export default function Homepage() {
           <h2 className='heading-2'>
             A furry who likes to program in Go, Java, TypeScript, JavaScript, with some Python.
           </h2>
+
+          <div className='social-row'>
+            {Object.entries(socials).map(([key, social]) =>
+              <a href={social.link} className={`button-${key}`} key={`social-button-${key}`} target='_blank' rel='noreferrer'>
+                <FontAwesomeIcon icon={social.icon as any} size='2x' />
+              </a>
+            )}
+          </div>
         </div>
       </div>
     </div>

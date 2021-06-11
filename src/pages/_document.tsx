@@ -26,21 +26,20 @@ export default class FoxDocument extends Document {
   render() {
     return <Html lang='en'>
       <Head>
-        <link rel='shortcut icon' href='/icon.png' />
-        <link rel='icon' href='/icon.png' />
+        <link rel='shortcut icon' href='https://cdn.floofy.dev/images/Ice.png' />
+        <link rel='icon' href='https://cdn.floofy.dev/images/Ice.png' />
         <meta charSet='UTF-8' />
         <meta name='description' content='A furry who likes to program in Go, Java, TypeScript, JavaScript, with some Python.' />
         <meta name='theme-color' content='#1489B4' />
         <meta name='og:description' content='A furry who likes to program in Go, Java, TypeScript, JavaScript, with some Python.' />
         <meta name='og:title' content='Winter' />
-        <meta name='og:image' content='https://winterfox.tech/icon.png' />
+        <meta name='og:image' content='https://cdn.floofy.dev/images/Ice.png' />
         <meta name='og:type' content='website' />
         <meta name='og:url' content='https://winterfox.tech' />
       </Head>
       <body>
         <Main />
         <NextScript />
-        <script src='https://twemoji.maxcdn.com/v/latest/twemoji.min.js' crossOrigin='anonymous'></script>
       </body>
     </Html>;
   }
