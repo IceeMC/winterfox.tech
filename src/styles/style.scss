@@ -2,8 +2,6 @@
 
 $background-colour: #262336;
 $selection-colour: #47A4A4;
-$document-height: 95%;
-$document-width: 99.75%;
 $fixed-height: 85vh;
 
 $colors: (
@@ -31,6 +29,7 @@ $colors: (
 
 html {
   scroll-behavior: smooth;
+  min-height: 100%;
 }
 
 body {
@@ -40,20 +39,19 @@ body {
   background-image: url(https://cdn.floofy.dev/winterbg.jpg);
   background-color: #232323;
   background-size: cover;
+  height: 100%;
 }
 
 .container {
   justify-content: center;
   font-family: 'Nunito', sans-serif;
   align-items: center;
-  padding-top: 2.35rem;
   display: flex;
-  height: $fixed-height;
+  height: 96vh; // not normal but it works i guess
   color: white;
 }
 
 .container-content {
-  margin-bottom: 0.25rem;
   text-align: center;
   gap: 0.75rem;
 }
@@ -144,43 +142,9 @@ body {
   }
 }
 
-.footer {
-  bottom: 0;
-  left: 0;
-
-  p {
-    text-align: center;
-    font-family: 'Indie Flower', cursive;
-    font-size: 1.6rem;
-    color: white;
-  }
-}
-
-@media only screen and (max-width: 694px) {
-  .footer {
-    padding-bottom: 0.253rem;
-
-    p {
-      font-size: 1.3rem;
-    }
-  }
-}
-
-.emoji {
-  vertical-align: -0.125em;
-  height: 35px;
-  width: 35px;
-}
-
-@media only screen and (max-width: 694px) {
-  .footer > p > .emoji {
-    height: 12px;
-    width: 12px;
-  }
-}
-
 .social-row {
   text-align: center;
+  display: hidden;
   gap: 0.75rem;
 }
 

@@ -23,7 +23,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import * as brands from '@fortawesome/free-brands-svg-icons';
 import * as core from '@fortawesome/fontawesome-svg-core';
-import Twemoji from '../components/Twemoji';
 import Image from 'next/image';
 
 core
@@ -99,11 +98,5 @@ export default function Homepage() {
         </div>
       </div>
     </div>
-
-    <footer className='footer'>
-      <p>
-        bork bork! | &copy; {year} <a href='https://floofy.dev' rel='noopener' style={{ color: 'white' }}>Noel</a> <Twemoji emoji='🥀' /> (art is not owned by me.)
-      </p>
-    </footer>
   </>;
 }
