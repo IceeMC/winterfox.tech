@@ -5,7 +5,7 @@ RUN apk update && apk add git ca-certificates
 
 WORKDIR /opt/winterfox
 COPY . .
-RUN yarn global add typescript next
+RUN yarn global add typescript
 RUN yarn
 
 # Why `NODE_OPTIONS`?
