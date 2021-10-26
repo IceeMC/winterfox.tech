@@ -22,7 +22,7 @@
     "next": "12.0.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "sass": "1.43.3"
+    "sass": "1.43.4"
   },
   "devDependencies": {
     "@augu/eslint-config": "2.2.0",
