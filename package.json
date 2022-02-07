@@ -15,7 +15,7 @@
     "dev": "npm run lint && next dev -p 3621"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "1.2.36",
+    "@fortawesome/fontawesome-svg-core": "1.3.0",
     "@fortawesome/free-brands-svg-icons": "5.15.4",
     "@fortawesome/react-fontawesome": "0.1.17",
     "autoprefixer": "10.4.2",
