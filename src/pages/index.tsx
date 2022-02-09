@@ -24,6 +24,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import * as brands from '@fortawesome/free-brands-svg-icons';
 import * as core from '@fortawesome/fontawesome-svg-core';
 import Image from 'next/image';
+import { socials, bio } from "../lib/data";
 
 core
   .library
@@ -35,33 +36,6 @@ core
     brands.faSteam,
     brands.faTwitch
   );
-
-const socials = {
-  github: {
-    icon: ['fab', 'github'],
-    link: 'https://github.com/IceeMC'
-  },
-  discord: {
-    icon: ['fab', 'discord'],
-    link: 'https://discord.gg/JjHGR6vhcG'
-  },
-  twitter: {
-    icon: ['fab', 'twitter'],
-    link: 'https://twitter.com/a_ice_cube'
-  },
-  telegram: {
-    icon: ['fab', 'telegram'],
-    link: 'https://t.me/WinterFoxxo'
-  },
-  twitch: {
-    icon: ['fab', 'twitch'],
-    link: 'https://twitch.tv/IceeMC'
-  },
-  steam: {
-    icon: ['fab', 'steam'],
-    link: 'https://steamcommunity.com/id/IceeMC'
-  }
-};
 
 export default function Homepage() {
   const current = new Date();
@@ -84,9 +58,7 @@ export default function Homepage() {
           <h1 className='heading-1'>
             Winter
           </h1>
-          <h2 className='heading-2'>
-            A furry who likes to program in Go, Java, TypeScript, JavaScript, with some Python.
-          </h2>
+          {bio}
 
           <div className='social-row'>
             {Object.entries(socials).map(([key, social]) =>
@@ -98,5 +70,6 @@ export default function Homepage() {
         </div>
       </div>
     </div>
+    <footer className="footer">&copy; Copyright {year} John Burke, Chris Hernandez; MIT</footer>
   </>;
 }
